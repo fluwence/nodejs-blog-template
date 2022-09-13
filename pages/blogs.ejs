@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blogs</title>
+        <meta name="keywords" content="blog">
+        <meta name="description" content="">
+        <meta name="og:title" content="Blogs">
+        <meta name="og:description" content="">
+        <meta name="og:site_name" content="blogs.fletify.cf">
+        <meta name="og:image" content="">
+        <meta name="image" content="">
+        <meta name="og:theme-color" content="#7289da">
+        <meta name="theme-color" content="#7289da">
+        <meta name="main-color" content="#7289da">
+        <link rel="shortcut icon" href="" type="image/x-icon">
+        <link rel="stylesheet" href="/styles/blog.css">
+    </head>
+    <body>
+        <main>
+           <div class="center">
+              <h1>Blogs</h1>
+              <section>
+                 <hr>
+                    <% blogs.forEach(blog => { %>
+                      <ul>
+                        <li>
+                          <a href="<%= '/blog/'+blog+'.html' %>"><%= blog %></a>
+                        </li>
+                      </ul>
+                    <% }); %>
+                 <hr>
+              </section>
+           </div>
+        </main>
+    </body>
+</html>
